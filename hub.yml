@@ -1,0 +1,17 @@
+name: sigstore-policy-test
+description: DESCRIPTION OF YOUR POLICY
+homepage: POLICY HOMEPAGE URL
+author:
+  name: raulcabello <raul.cabello@suse.com>
+  homepage: https://author1.website
+download:
+  # Important: leave the __TAG__ around: this is automatically replaced with the value of the git tag
+  registry: ghcr.io/kubewarden/policies/sigstore-policy-test:__TAG__
+  # url is optional
+  url: https://github.com/yourorg/sigstore-policy-test/releases/download/__TAG__/policy.wasm
+keywords:
+  - this is freeform
+resources:
+  - Pod
+mutation: false
+contextAware: false
